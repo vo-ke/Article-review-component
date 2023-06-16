@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [http://127.0.0.1:5500/index.html]
-- Live Site URL: [Add live site URL here]
+- Live Site URL: [https://vo-ke.github.io/Article-review-component/]
 
 ## My process
 
