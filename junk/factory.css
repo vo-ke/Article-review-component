@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.smooth{
+    @apply hover:scale-125 duration-500 ease-in-out;
+}
+
+.state{
+    @apply lappy:left-auto lappy:-right-9 lappy:bottom-1/3 ;
+}
+
+.state.active {
+    @apply opacity-100;
+}
+
+.compound.active {
+    @apply bg-gray-500;
+}
+
+.house.active {
+    @apply fill-white;
+}

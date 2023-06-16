@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-slate-200 w-screen lappy:h-screen flex align-middle items-center justify-center content-center">
+
+  <main class="font-default mx-7 my-20 flex flex-col lappy:flex-row max-w-lg lappy:max-w-5xl">
+    <!-- first half -->
+    <div class="lappy:max-w-sm ">
+      <img src="images\drawers.jpg" class="rounded-t-xl lappy:rounded-tr-none lappy:rounded-l-xl">
+    </div>
+
+    <!-- second half -->
+    <div class="relative rounded-b-xl lappy:rounded-bl-none lappy:rounded-r-xl lappy:max-h-72 bg-white">
+     <div class=" px-9 pt-10 lappy:pt-9">
+      <div class="mt-2 lappy:mt-0 text-gray-700 text-lg font-bold">
+        Shift the overall look and feel by adding these wonderful touches to furniture in your home
+      </div>
+      <p class="mt-5 lappy:mt-3 text-gray-600">
+        Ever been in a room and felt like something is missing? Perhaps it felt something bare and uninviting.
+        I've got some simple tips to help you make any room feel complete.
+      </p>
+ 
+      <!-- foter -->
+      <footer class="mt-12 lappy:my-5 mb-7 relative flex space-x-4 items-center">
+          <img src="images\avatar-michelle.jpg" class="h-11 w-11 rounded-full">
+         <div>
+           <strong>Michelle  Appleton</strong>
+            <div class="text-gray-500">28 Jun 2020</div>
+         </div>
+          <!-- share button -->
+         <button class="compound bg-gray-200 h-8 w-8 flex items-center justify-center rounded-full absolute right-0 top-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" class="fill-gray-500 house" height="13"><path  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+         </button>
+      <footer>
+        
+        
+     </div>
+
+     <!-- active state for mobile -->
+      <section class="state absolute left-0 right-0 bottom-0 opacity-0 z-10 bg-gray-600 rounded-b-xl lappy:rounded-xl">
+        <div class="relative px-9 py-7 lappy:py-3 flex items-center space-x-4  text-gray-300 ">
+        <p class="uppercase tracking-[.45em] text-xs mr-2">share</p>
+        <a href="#" class="smooth"><img src="images\icon-facebook.svg"></a>
+        <a href="#" class="smooth"><img src="images\icon-twitter.svg"></a>
+        <a href="#" class="smooth"><img src="images\icon-pinterest.svg"></a>
+
+        <button class="compound2 bg-gray-500 h-8 w-8 flex items-center justify-center rounded-full absolute right-9 bottom-[1.375rem] lappy:hidden">
+         <svg xmlns="http://www.w3.org/2000/svg" width="15" class="fill-white" height="13"><path  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+
+        </button>
+        
+        <span class="absolute right-20 -bottom-2 bg-gray-600 h-4 w-4 hidden lappy:block rotate-45">
+
+        </span>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
