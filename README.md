@@ -41,6 +41,6 @@ Users should be able to:
 ## Author
 
 - Website - comin' son
-- Frontend Mentor - [@vo-ke](https://www.frontendmentor.io/profile/v0-ke)
+- Frontend Mentor - [@vo-ke](https://www.frontendmentor.io/profile/vo-ke)
 - Twitter - [@variant_vee](https://www.twitter.com/variant_vee)
 
