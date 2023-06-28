@@ -6,7 +6,7 @@ compound2 = document.querySelector(".compound2"),
 
 compound.addEventListener("click", addActive);
 
-compound2.addEventListener("click", removeActive);
+//compound2.addEventListener("click", removeActive);
 
 //state.addEventListener("click", removeActive);
 
