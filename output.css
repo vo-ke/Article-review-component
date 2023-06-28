@@ -774,8 +774,10 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.opacity-0 {
-  opacity: 0;
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .smooth {
@@ -789,16 +791,8 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@media (min-width: 1040px) {
-  .state {
-    left: auto;
-    right: -2.25rem;
-    bottom: 33.333333%;
-  }
-}
-
 .state.active {
-  opacity: 1;
+  display: block;
 }
 
 .compound.active {
@@ -811,6 +805,18 @@ video {
 }
 
 @media (min-width: 1040px) {
+  .lappy\:-right-9 {
+    right: -2.25rem;
+  }
+
+  .lappy\:bottom-1\/3 {
+    bottom: 33.333333%;
+  }
+
+  .lappy\:left-auto {
+    left: auto;
+  }
+
   .lappy\:my-5 {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
@@ -881,5 +887,11 @@ video {
 
   .lappy\:pt-9 {
     padding-top: 2.25rem;
+  }
+
+  .lappy\:shadow-lg {
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
