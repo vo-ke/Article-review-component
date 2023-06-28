@@ -5,15 +5,26 @@ compound2 = document.querySelector(".compound2"),
 
 
 compound.addEventListener("click", addActive);
+compound.addEventListener("touchstart", addActive); // Add touchstart event listener
 
 compound2.addEventListener("click", removeActive);
-state.addEventListener("click", removeActive);
+compound2.addEventListener("touchstart", removeActive); // Add touchstart event listener
+
+//state.addEventListener("click", removeActive);
+//state.addEventListener("touchstart", removeActive); // Add touchstart event listener
+
 
 
 function addActive() {
-    house.classList.add("active");
-    compound.classList.add("active");
-    state.classList.add("active");
+    compound.classList.toggle("active");
+    
+    if (compound.classList.contains("active")) {
+      house.classList.add("active");
+      state.classList.add("active");
+  } else {
+    house.classList.remove("active");
+    state.classList.remove("active");
+  }
   }
   
   function removeActive() {
