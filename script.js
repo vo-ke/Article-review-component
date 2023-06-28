@@ -5,13 +5,11 @@ compound2 = document.querySelector(".compound2"),
 
 
 compound.addEventListener("click", addActive);
-compound.addEventListener("touchstart", addActive); // Add touchstart event listener
 
 compound2.addEventListener("click", removeActive);
-compound2.addEventListener("touchstart", removeActive); // Add touchstart event listener
 
 //state.addEventListener("click", removeActive);
-//state.addEventListener("touchstart", removeActive); // Add touchstart event listener
+
 
 
 
